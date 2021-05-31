@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: notification-service
+  cloud:
+    stream:
+      bindings:
+        notificationEventSupplier-in-0:
+          destination: notification-events
+server:
+  port: 0
